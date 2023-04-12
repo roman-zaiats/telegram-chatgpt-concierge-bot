@@ -13,9 +13,6 @@ RUN npm install
 # Copy the rest of the application files to the container
 COPY . .
 
-# Build the TypeScript files
-RUN npm run build
-
 # Expose the port on which the application will run
 EXPOSE 8080
 
